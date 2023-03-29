@@ -4,8 +4,12 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { api } from "@/utils/api";
+
+import localFont from "next/font/local";
+
+// Font files can be colocated inside of `pages`
+const Futura = localFont({ src: "../../fonts/Futura Extra Black font.ttf" });
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -16,19 +20,33 @@ const Home: NextPage = () => {
         <main className="">
           <div className="hero relative h-[550px] overflow-hidden">
             <Image
+              className="ms:bottom-4  absolute bottom-0 right-12 w-[100px] sm:w-32"
+              src="/mascot.svg"
+              alt="mascot"
+              width={120}
+              height={120}
+            />
+            <Image
               className="-z-10 object-cover"
               src="/hero.png"
               alt="heroImg"
               quality={100}
               fill
             />
-            <div className="hero-text  flex h-full flex-col items-center justify-center  text-white">
-              <h1 className="extra-bold p-3 text-6xl">Headless blog CMS</h1>
-              <p className="text-center text-xl text-secondery">
-                A Developer First blogging platform, for createing and <br />
-                mannging blog posts. create post with our edior and connect
-                <br /> it to your app.
+            <div className="hero-text  mx-6 flex h-full flex-col gap-6 text-white  sm:w-7/12 sm:justify-center lg:m-auto lg:items-center lg:text-center">
+              <h1
+                className={`extra-bold  ms:mt-0 mt-12 text-4xl sm:text-6xl lg:text-7xl ${Futura.className}`}
+              >
+                Headless blog CMS
+              </h1>
+              <p className="sm:text-xl lg:text-center  ">
+                A Developer First blogging platform, for createing and mannging
+                blog posts. create post with our edior and connect it to your
+                app.
               </p>
+              <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:text-brand hover:shadow-lg lg:w-auto">
+                Join Waitlist
+              </button>
             </div>
           </div>
         </main>
