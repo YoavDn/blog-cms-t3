@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <>
       <div className="bg-brand">
-        <main className="container mx-auto  flex items-center justify-between px-6  py-5 ">
+        <main className="container mx-auto  flex items-center justify-between px-6  py-5 lg:px-32 ">
           <Image src="/bloggie.svg" height={132} width={132} alt="logo" />
           <nav className=" hidden text-white lg:flex">
             <ul className="text-ms flex text-lg font-semibold lg:gap-10  ">

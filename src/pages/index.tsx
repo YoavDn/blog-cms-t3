@@ -18,9 +18,9 @@ const Home: NextPage = () => {
     <>
       <Layout>
         <main className="">
-          <div className="hero relative h-[500px] overflow-hidden">
+          <section className="hero relative h-[500px] overflow-hidden">
             <Image
-              className="ms:bottom-4  sm:w-62 absolute bottom-0 right-12 w-[200px]"
+              className="ms:bottom-4 sm:w-62 absolute bottom-0 right-12 hidden w-[200px] sm:block"
               src="/mascot.svg"
               alt="mascot"
               width={320}
@@ -49,7 +49,79 @@ const Home: NextPage = () => {
                 Join Waitlist
               </button>
             </div>
-          </div>
+          </section>
+          <section className="container mx-auto flex flex-col items-center justify-between gap-8 px-6 py-24  md:flex-row lg:px-32">
+            <div className="  basis-1/2  leading-8 ">
+              <h2
+                className={`${Futura.className} pb-3 text-xl md:text-4xl lg:text-5xl`}
+              >
+                Create and manage blog posts
+              </h2>
+              <p className="md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                quisquam vitae, sed sapiente aliquid sequi praesentium corporis
+                at eveniet eligendi? Voluptas!
+              </p>
+            </div>
+            <div className="-order-1 md:order-2 ">
+              <Image
+                src="/look-mom.png"
+                width={300}
+                height={400}
+                alt="png"
+                className="md:m-auto"
+              ></Image>
+            </div>
+          </section>
+
+          <section className="bg-slate-200">
+            <div className="container mx-auto flex flex-col items-center justify-start gap-8  px-6 py-24  md:flex-row lg:px-32">
+              <div className=" order-2 basis-1/2  leading-8">
+                <h2
+                  className={`${Futura.className} pb-3 text-xl md:text-4xl lg:text-5xl`}
+                >
+                  Design for Developers
+                </h2>
+                <p className="md:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  quisquam vitae, sed sapiente aliquid sequi praesentium
+                  corporis at eveniet eligendi? Voluptas!
+                </p>
+              </div>
+              <div className=" basis-1/2  ">
+                <Image
+                  src="/mascot-dev.png"
+                  width={300}
+                  height={400}
+                  alt="png"
+                ></Image>
+              </div>
+            </div>
+          </section>
+          <section className="bg-white">
+            <div className="container mx-auto flex flex-col items-center justify-between gap-8  px-6 py-24  md:flex-row lg:px-32">
+              <div className="  basis-1/2  leading-10">
+                <h2
+                  className={`${Futura.className} pb-3 text-xl md:text-4xl lg:text-5xl`}
+                >
+                  Completely headless
+                </h2>
+                <p className="md:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  quisquam vitae, sed sapiente aliquid sequi praesentium
+                  corporis at eveniet eligendi? Voluptas!
+                </p>
+              </div>
+              <div className="order-1 md:order-2">
+                <Image
+                  src="/headless.png"
+                  width={300}
+                  height={400}
+                  alt="png"
+                ></Image>
+              </div>
+            </div>
+          </section>
         </main>
       </Layout>
     </>
