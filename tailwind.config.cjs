@@ -4,8 +4,9 @@ const config = {
   theme: {
     extend: {
       colors: {
-        brand: "#68B984",
-        secondery: "#3D5656",
+        brand: "#0B2447",
+        secondery: "#19376D",
+        "brand-light": "#A5D7E8",
         transparent: "transparent",
         current: "currentColor",
         white: "#ffffff",

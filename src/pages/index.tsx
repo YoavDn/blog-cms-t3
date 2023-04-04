@@ -9,7 +9,7 @@ import { api } from "@/utils/api";
 import localFont from "next/font/local";
 
 // Font files can be colocated inside of `pages`
-const Futura = localFont({ src: "../../fonts/Futura Extra Black font.ttf" });
+const Futura = localFont({ src: "../../fonts/unicode.futurabb.ttf" });
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -18,19 +18,20 @@ const Home: NextPage = () => {
     <>
       <Layout>
         <main className="">
-          <div className="hero relative h-[550px] overflow-hidden">
+          <div className="hero relative h-[500px] overflow-hidden">
             <Image
-              className="ms:bottom-4  absolute bottom-0 right-12 w-[100px] sm:w-32"
+              className="ms:bottom-4  sm:w-62 absolute bottom-0 right-12 w-[200px]"
               src="/mascot.svg"
               alt="mascot"
-              width={120}
-              height={120}
+              width={320}
+              height={420}
             />
             <Image
               className="-z-10 object-cover"
               src="/hero.png"
               alt="heroImg"
               quality={100}
+              priority
               fill
             />
             <div className="hero-text  mx-6 flex h-full flex-col gap-6 text-white  sm:w-7/12 sm:justify-center lg:m-auto lg:items-center lg:text-center">
@@ -39,12 +40,12 @@ const Home: NextPage = () => {
               >
                 Headless blog CMS
               </h1>
-              <p className="sm:text-xl lg:text-center  ">
+              <p className="text-brand-light sm:text-xl lg:text-center ">
                 A Developer First blogging platform, for createing and mannging
-                blog posts. create post with our edior and connect it to your
+                blog posts. create post with our edior and connect it to yourya
                 app.
               </p>
-              <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:text-brand hover:shadow-lg lg:w-auto">
+              <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:shadow-md hover:shadow-brand-light lg:w-auto">
                 Join Waitlist
               </button>
             </div>
