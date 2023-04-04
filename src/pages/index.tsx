@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <>
       <Layout>
         <main className="">
-          <section className="hero relative h-[500px] overflow-hidden">
+          <section className="hero relative h-[600px] overflow-hidden">
             <Image
               className="ms:bottom-4 sm:w-62 absolute bottom-0 right-12 hidden w-[200px] sm:block"
               src="/mascot.svg"
@@ -41,8 +41,8 @@ const Home: NextPage = () => {
                 Headless blog CMS
               </h1>
               <p className="text-brand-light sm:text-xl lg:text-center ">
-                A Developer First blogging platform, for createing and mannging
-                blog posts. create post with our edior and connect it to yourya
+                A Developer First blogging platform, for creating and managing
+                blog posts. create post with our editor and connect it to your
                 app.
               </p>
               <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:shadow-md hover:shadow-brand-light lg:w-auto">
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className="bg-slate-200">
+          <section className="bg-gray-100">
             <div className="container mx-auto flex flex-col items-center justify-start gap-8  px-6 py-24  md:flex-row lg:px-32">
               <div className=" order-2 basis-1/2  leading-8">
                 <h2
@@ -120,6 +120,16 @@ const Home: NextPage = () => {
                   alt="png"
                 ></Image>
               </div>
+            </div>
+          </section>
+          <section className="bg-gray-100">
+            <div className=" container mx-auto flex flex-col items-center justify-between gap-8  px-6 py-24  lg:px-32 ">
+              <h1
+                className={`${Futura.className} pb-3 text-xl md:text-4xl lg:text-5xl`}
+              >
+                Move fast with a rich an robust editor
+              </h1>
+              {/* TODO: add editor */}
             </div>
           </section>
         </main>

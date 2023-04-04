@@ -13,7 +13,7 @@ const Nav = () => {
               <li className="hover:underline"> More</li>
             </ul>
           </nav>
-          <button className="rounded-lg  bg-white  px-3 py-1  text-secondery transition-all ease-in-out hover:text-brand hover:shadow-md ">
+          <button className=" rounded-lg  bg-white  px-3 py-1  text-secondery transition-all ease-in-out hover:text-brand hover:shadow-md ">
             Join us
           </button>
         </main>
