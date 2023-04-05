@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
+import DialogDemo from "@/components/ui/WaitlistDialog";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { api } from "@/utils/api";
 
@@ -45,9 +46,10 @@ const Home: NextPage = () => {
                 blog posts. create post with our editor and connect it to your
                 app.
               </p>
-              <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:shadow-md hover:shadow-brand-light lg:w-auto">
+              {/* <button className="mt-4 w-48 rounded-xl bg-white p-2 px-7 text-xl text-black transition-all hover:shadow-md hover:shadow-brand-light lg:w-auto">
                 Join Waitlist
-              </button>
+              </button> */}
+              <DialogDemo />
             </div>
           </section>
           <section className="container mx-auto flex flex-col items-center justify-between gap-8 px-6 py-24  md:flex-row lg:px-32">
