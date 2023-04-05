@@ -16,7 +16,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   return (
-    <main className={(inter.className, Futura.className)}>
+    <main className={inter.className}>
       <SessionProvider session={session}>
         <Component {...pageProps} />
       </SessionProvider>
