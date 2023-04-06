@@ -9,6 +9,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="">
         <Nav />
+
         <main>{children}</main>
       </div>
     </>
